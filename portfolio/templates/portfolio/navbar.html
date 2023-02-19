@@ -1,0 +1,45 @@
+{% load static %}
+<nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="{% static 'portfolio/img/vivek.jpeg' %}" width="40" height="60" class="d-inline-block align-top" alt="">
+            <span class="home-brand">Vivek Singh</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mx-auto" id="navid">
+                <li class="nav-item" id="nav1">
+                    <a class="nav-link" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" id="nav2">
+                    <a class="nav-link" href="{% url 'portfo' %}">Portfolio</a>
+                </li>
+                <!--<li class="nav-item" id="nav3">
+                    <a class="nav-link" href="{"#"}">Contact</a>
+                </li>-->
+                <li class="nav-item" id="nav4">
+                    <a class="nav-link" href="{% url 'resume' %}">Resume</a>
+                </li>
+            </ul>
+            <!--<ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="">
+                        <img src="{% static 'portfolio/img/1.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="{% static 'portfolio/img/2.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">
+                        <img src="{% static 'portfolio/img/3.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
+                    </a>
+                </li>
+            </ul>-->
+        </div>
+    </div>
+</nav>
